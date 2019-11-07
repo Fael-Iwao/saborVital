@@ -1,0 +1,294 @@
+@font-face {
+    font-family:'Clemente-Light';
+    src:    url(../fonts/ClementePDae-Light.ttf);
+}
+@font-face {
+    font-family:'Clemente-regular';
+    src:    url(../fonts/ClementePDai-Regular.ttf);
+}
+@font-face {
+    font-family:'Clemente-bold';
+    src:    url(../fonts/ClementePDak-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+
+
+/******************** Variaveis ********************/
+
+:root {
+
+	/*Verde*/
+	--color-primary-transparent-01: rgba(16, 139, 34, .5); 
+	/*Laranja*/
+	--color-primary-transparent-02: rgba(255, 114, 0, .5);
+	/*Marrom*/
+	--color-primary-transparent-03: rgba(147, 90, 42, .5);
+
+	/*Verde*/
+	--color-primary-01:  #108b22; 
+	/*Laranja*/
+	--color-primary-02:  #ff7200; 
+	/*Marrom*/
+	--color-primary-03:  #935a2a; 
+}
+
+
+
+/******************** Fontes ********************/
+
+.text-montserrat{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.text-clement{
+	font-family: 'Clemente-regular'
+}
+.text-clement-light{
+	font-family: 'Clemente-light'
+}
+.text-clement-bold{
+	font-family: 'Clemente-bold'
+}
+
+.text-transparent{
+    color: transparent !important;
+}
+.text-unstyled{
+    text-decoration: none !important;
+}
+
+/******************** Cores Fontes ********************/
+
+.color-sv-1{
+	color: var(--color-primary-01);
+}
+.color-sv-2{
+	color: var(--color-primary-02);
+}
+.color-sv-3{
+	color: var(--color-primary-03);
+}
+
+
+/******************** Backgrounds ********************/
+
+
+.bg-sv-1{
+	background-color: var(--color-primary-01) !important;
+}
+.bg-sv-2{
+	background-color: var(--color-primary-02) !important;
+}
+.bg-sv-3{
+	background-color: var(--color-primary-03) !important;
+}
+
+.bg-transparent-sv-1{
+	background-color: var(--color-primary-transparent-01) !important;
+}
+.bg-transparent-sv-2{
+	background-color: var(--color-primary-transparent-02) !important;
+}
+.bg-transparent-sv-3{
+	background-color: var(--color-primary-transparent-03) !important;
+}
+
+.bg-white{
+	background-color: #fff !important;
+}
+.bg-dark-transparent{
+	background-color: rgba(0,0,0,.3);
+}
+
+.bg-green-02{
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-green-1.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-green-1.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-green-1.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-green-1.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-wood-02{
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-3.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-3.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-3.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-3.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.construcao{
+	height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+/********************banner********************/
+#banner{
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-2.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-2.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-2.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-2.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh; 
+}
+#bannerSecondary{
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-1.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-1.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-1.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0.5)), url("../img/bg-wood-1.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    min-height: 35vh;
+    max-height: 35vh; 
+}
+.paralax{
+	 background-attachment: fixed;
+}
+.more{
+    position: absolute;
+    bottom: 10px;
+    width: 100px;
+    left: calc(50% - 50px);
+    text-decoration: none;
+}
+
+/******************** Tamanhos ********************/
+
+.tam-25{
+	width: 25% !important;
+	height: 25% !important;
+}
+
+/********************bordas********************/
+.border-titulo-left{
+	border-left: 3px solid var(--color-primary-03);
+}
+
+.border-card-bottom{
+	border-bottom: 4px solid var(--color-primary-01);
+}
+
+/********************estilos********************/
+
+.hr-sv{
+	width: 100%;
+	height: 3px;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), var(--color-primary-02), rgba(255, 255, 255, 0));
+	display: block;
+}
+.hr-sv1{
+	width: 100%;
+	height: 1px;
+	background-image: linear-gradient(to left, rgba(255, 255, 255, 0), var(--color-primary-01));
+	display: block;
+}
+.hr-sv2{
+	width: 100%;
+	height: 3px;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), var(--color-primary-02), rgba(255, 255, 255, 0));
+	display: block;
+
+}
+.hr-complemento{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -15px;
+	width: 30px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: block;
+}
+
+.ul-sv{
+	list-style-type: circle;
+}
+
+.badge-sv{
+	font-weight: 400 !important;
+	padding: .4em 4em !important;
+	color: #fff;
+}
+.badge-sv.active{
+	padding: .5em 5em !important;
+}
+.badge-sv:hover{
+	cursor: pointer;
+}
+
+
+.img-thumbnail{
+	background-color: #ccc;
+	border:none;
+}
+
+.textarea-sv{
+	resize: none;
+	height: 120px;
+}
+
+.pointer:hover{
+	cursor: pointer;
+}
+.cat-vinho{
+	border-radius: 50%;
+	transition: .1s;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  	filter: grayscale(100%);
+  	
+  	opacity: .5;
+}
+.cat-vinho.active{
+	border: 2px solid #cecece;
+	padding: 0;
+	width: 22%;
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  	filter: grayscale(0%);
+  	opacity: 1;
+}
+
+.list-group-item.active{
+	background-color: var(--color-primary-01);
+	border-color: var(--color-primary-01);
+}
+
+/*icones*/
+.social-media{
+	font-size: 4em;
+	color: var(--color-primary-02);
+}
+.social-media:hover{
+	cursor: pointer;
+	color: #34d14b !important;
+	transition: .3s;
+}
+
+
+
+.form-pesquisa{
+	border-radius: 15px 0 0 15px  ;
+}
+
+.button-pesquisa{
+	border-radius: 0 15px 15px 0;
+}
+
+
+	

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulário Funcionários</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="lib/fontawesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body class="">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-sv-1">
+			<a class="navbar-brand text-white text-clement-light" href="#home">Empório Sabor Vital</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse pull-right" id="navBar">
+				<div class="navbar-nav ml-auto">
+					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#quemSomos">Quem somos</a>
+					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#produtos">Produtos</a>
+					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#vinhos">Vinhos</a>
+					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#contato">Contato</a>
+					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#redesSociais">Redes Sociais</a>
+				</div>
+			</div>
+			
+		</nav>
+
+		<div class="container-fluid mt-5 py-5">
+
+			<div class="row ">
+				<div class="col-9">
+					<h2 class="text-clement-light color-sv-1">
+						Nossos produtos
+					</h2>
+					
+					
+				</div>	
+				
+				<div class="col-3">	
+					<div class="input-group mb-3">
+						<input type="text" class="form-control form-pesquisa" placeholder="Pesquisar Produto" >
+						<div class="input-group-append">
+							<button class="btn btn-outline-success button-pesquisa" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<span class="hr-sv1"></span>
+				</div>
+
+				<div class="col-3 py-5">
+					<ul class="list-group">
+						<li class="pointer list-group-item active" id="menu-graos"  onclick="filtroProd('graos')">Grãos</li>
+						<li class="pointer list-group-item" id="menu-frutas-secas"  onclick="filtroProd('frutas-secas')">Frutas Secas</li>
+						<li class="pointer list-group-item" id="menu-frutas-cristalizadas" onclick="filtroProd('frutas-cristalizadas')">Frutas Cristalizadas</li>
+					</ul>
+				</div>
+				<div class="col-9">
+					<section id="produtos-graos" class="produtos-gerais">
+						<div class="row p-5">
+							<div class="col-3 ">
+								<a  class="p-0 mb-4 pointer" onclick="modalProduto()">
+									<img class="img-fluid w-100" src="img/graos.jpg" alt="">
+									
+								</a>
+								<h5 class="text-clement-light color-sv-2 mt-2 mx-2 mb-0">Grãos de feijão</h5>
+								<span class="hr-sv1"></span>
+								<p class="text-montserrat color-sv-1 mx-2 ">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nulla laoreet, facilisis nulla non, consectetur metus.
+								</p>
+							</div>
+							<div class="col-3 ">
+								<a  class="p-0 mb-4 pointer" onclick="modalProduto()">
+									<img class="img-fluid w-100" src="img/graos.jpg" alt="">
+									
+								</a>
+								<h5 class="text-clement-light color-sv-2 mt-2 mx-2 mb-0">Grãos de feijão</h5>
+								<span class="hr-sv1"></span>
+								<p class="text-montserrat color-sv-1 mx-2 ">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nulla laoreet, facilisis nulla non, consectetur metus.
+								</p>
+							</div>
+							<div class="col-3 ">
+								<a  class="p-0 mb-4 pointer" onclick="modalProduto()">
+									<img class="img-fluid w-100" src="img/graos.jpg" alt="">
+									
+								</a>
+								<h5 class="text-clement-light color-sv-2 mt-2 mx-2 mb-0">Grãos de feijão</h5>
+								<span class="hr-sv1"></span>
+								<p class="text-montserrat color-sv-1 mx-2 ">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nulla laoreet, facilisis nulla non, consectetur metus.
+								</p>
+							</div>
+							<div class="col-3 ">
+								<a  class="p-0 mb-4 pointer" onclick="modalProduto()">
+									<img class="img-fluid w-100" src="img/graos.jpg" alt="">
+									
+								</a>
+								<h5 class="text-clement-light color-sv-2 mt-2 mx-2 mb-0">Grãos de feijão</h5>
+								<span class="hr-sv1"></span>
+								<p class="text-montserrat color-sv-1 mx-2 ">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nulla laoreet, facilisis nulla non, consectetur metus.
+								</p>
+							</div>
+
+						</div>
+					</section>
+					<section id="produtos-frutas-secas" class="produtos-gerais">
+						<div class="row p-5">
+							<div class="col-3 ">
+								<a  class="p-0 mb-4 pointer" onclick="modalProduto()">
+									<img class="img-fluid w-100" src="img/frutas-secas.jpg" alt="">
+									
+								</a>
+								<h5 class="text-clement-light color-sv-2 mt-2 mx-2 mb-0">Frutas Secas</h5>
+								<span class="hr-sv1"></span>
+								<p class="text-montserrat color-sv-1 mx-2 ">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nulla laoreet, facilisis nulla non, consectetur metus.
+								</p>
+							</div>
+							<div class="col-3 ">
+								<a  class="p-0 mb-4 pointer" onclick="modalProduto()">
+									<img class="img-fluid w-100" src="img/frutas-secas.jpg" alt="">
+									
+								</a>
+								<h5 class="text-clement-light color-sv-2 mt-2 mx-2 mb-0">Frutas Secas</h5>
+								<span class="hr-sv1"></span>
+								<p class="text-montserrat color-sv-1 mx-2 ">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nulla laoreet, facilisis nulla non, consectetur metus.
+								</p>
+							</div>
+							<div class="col-3 ">
+								<a  class="p-0 mb-4 pointer" onclick="modalProduto()">
+									<img class="img-fluid w-100" src="img/frutas-secas.jpg" alt="">
+									
+								</a>
+								<h5 class="text-clement-light color-sv-2 mt-2 mx-2 mb-0">Frutas Secas</h5>
+								<span class="hr-sv1"></span>
+								<p class="text-montserrat color-sv-1 mx-2 ">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nulla laoreet, facilisis nulla non, consectetur metus.
+								</p>
+							</div>
+							<div class="col-3 ">
+								<a  class="p-0 mb-4 pointer" onclick="modalProduto()">
+									<img class="img-fluid w-100" src="img/frutas-secas.jpg" alt="">
+									
+								</a>
+								<h5 class="text-clement-light color-sv-2 mt-2 mx-2 mb-0">Frutas Secas</h5>
+								<span class="hr-sv1"></span>
+								<p class="text-montserrat color-sv-1 mx-2 ">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nulla laoreet, facilisis nulla non, consectetur metus.
+								</p>
+							</div>
+
+						</div>
+					</section>
+				</div>
+				
+					
+			</div>
+		</div>
+
+		<script src="lib/jquery-3.1.1/jquery-3.1.1.js"></script>
+		<script src="lib/js/popper.min.js"></script>
+		<script src="lib/js/bootstrap.js"></script>
+		<!-- <script src="lib/cliptwo/vendor/maskedinput/jquery.maskedinput.js"></script> -->
+		<script >
+
+				jQuery(document).ready(function() {
+					$(".produtos-gerais").hide();
+					$("#produtos-graos").show();
+
+				});
+				
+
+				function modalProduto(){
+					$("#modalProduto").modal('show')
+				}
+
+				function filtroProd(id){
+					$(".list-group-item").removeClass('active');
+					$("#menu-"+id).addClass('active');
+					$(".produtos-gerais").hide();
+					$("#produtos-"+id).show();
+				}
+		</script>
+	</body>
+</html>
