@@ -10,19 +10,19 @@
 
 	</head>
 	<body class="bg-green-02 paralax">
-		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-sv-1">
-			<a class="navbar-brand text-white text-clement-light" href="#home">Empório Sabor Vital</a>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-sv-3 inHome header-master py-2">
+			<a class="navbar-brand text-white text-clement-light header-title" href="#home"><img src="img/sv.png" class="w-50" alt=""></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse pull-right" id="navBar">
 				<div class="navbar-nav ml-auto">
-					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#quemSomos">Quem somos</a>
-					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#produtos">Produtos</a>
-					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#vinhos">Vinhos</a>
-					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#dicas">Dicas</a>
-					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#contato">Contato</a>
-					<a class="nav-item nav-link text-white scroll-down text-montserrat" href="#redesSociais">Redes Sociais</a>
+					<a class="nav-item nav-link scroll-down text-montserrat" href="#quemSomos">Sobre nós</a>
+					<a class="nav-item nav-link scroll-down text-montserrat" href="#produtos">Produtos</a>
+					<!-- <a class="nav-item nav-link scroll-down text-montserrat" href="#vinhos">Vinhos</a> -->
+					<!-- <a class="nav-item nav-link scroll-down text-montserrat" href="#dicas">Dicas</a> -->
+					<a class="nav-item nav-link scroll-down text-montserrat" href="#contato">Contato</a>
+					<a class="nav-item nav-link scroll-down text-montserrat" href="#redesSociais">Redes Sociais</a>
 				</div>
 			</div>
 			
@@ -93,84 +93,74 @@
 				</div>
 			</section>
 			<section id="produtos">
-				<div class="row bg-dark-transparent py-4">
-					<div class="col-12">
-						<h1 class="text-clement-light color-sv-2 mx-auto">Nossos Produtos em Destaque</h1>
+				<div class="row bg-dark-transparent py-5">
+					<div class="col-12 mb-4">
+						<h1 class="text-clement-light color-sv-2 mx-auto">Destaques</h1>
 						<span class="hr-sv1"></span>
 						<p class="text-montserrat text-white">
 							Nunc ac cursus risus, quis pretium massa. Aenean tempor, ligula ac sagittis sollicitudin, erat felis commodo turpis, a tristique quam sapien sed urna.
 						</p>
 					</div>
-					<div class="col-12 mt-4 mb-2">
-						<h4 class="text-clement-light text-white">Filtros</h4>
-						<span class="badge badge-sv bg-sv-3 text-montserrat active" id="todos" onclick="filtroProduto(this.id)">Todos</span>
-						<span class="badge badge-sv badge-secondary text-montserrat" id="graos" onclick="filtroProduto(this.id)">grãos</span>
-						<span class="badge badge-sv badge-secondary text-montserrat" id="frutas-secas" onclick="filtroProduto(this.id)"> Frutas Secas</span>
-						<span class="badge badge-sv badge-secondary text-montserrat" id="frutas-cristalizadas" onclick="filtroProduto(this.id)">Frutas Cristalizadas</span>
+					<div class="card-group col-12 col-sm-4">
+						<div class="card card-style-001" id="imageCard1">
+							<div class="card-body p-0" >
+								<img src="img/products/prod002.jpg" alt="" class="card-img">
+							</div>
+						</div>
+						<div class="card card-style-001 bg-sv-3" id="descriptionCard1">
+							<div class="card-body text-white">
+								<h4 class="card-title">Grãos</h4>
+								<p class="card-text">Grande variedade de grãos de alta qualidade.</p>
+								
+							</div>
+							<div class="card-footer text-right text-white" >
+								<button class="btn btn-outline-light mt-5 btn-sm w-100" onclick="showDetails()">Detalhes</button>
+							</div>
+							
+						</div>
+						
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3 todos graos escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/graos" alt="">
-						</a>
+					<div class="card-group col-12 col-sm-4">
+						<div class="card card-style-001" id="imageCard2">
+							<div class="card-body p-0" >
+								<img src="img/products/prod003.jpg" alt="" class="card-img">
+							</div>
+						</div>
+						<div class="card card-style-001 bg-sv-4" id="descriptionCard2">
+							<div class="card-body text-white">
+								<h4 class="card-title">Pergola</h4>
+								<p class="card-text">Vinhos e sucos integrais Pergola.</p>
+								
+							</div>
+							<div class="card-footer text-white" >
+								<button class="btn btn-outline-light mt-5 btn-sm w-100" onclick="showDetails()">Detalhes</button>
+							</div>
+							
+						</div>
+						
+					
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3 todos frutas-secas escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/frutas-secas.jpg" alt="">
-						</a>
+					<div class="card-group col-12 col-sm-4">
+						<div class="card card-style-001" id="imageCard3">
+							<div class="card-body p-0" >
+								<img src="img/products/prod004.jpg" alt="" class="card-img">
+							</div>
+						</div>
+						<div class="card card-style-001 bg-sv-3" id="descriptionCard3">
+							<div class="card-body text-white">
+								<h4 class="card-title">San Paolo</h4>
+								<p class="card-text">Rondellis e Gnocchis em variados sabores</p>
+								
+							</div>
+							<div class="card-footer text-right text-white" >
+								<button class="btn btn-outline-light mt-5 btn-sm w-100" onclick="showDetails()">Detalhes</button>
+							</div>
+							
+						</div>
+						
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3 todos frutas-cristalizadas escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/frutas-cristalizadas.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3 todos graos escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/graos" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3 todos frutas-secas escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/frutas-secas.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3  todos frutas-cristalizadas escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/frutas-cristalizadas.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3 todos graos escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/graos" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3 todos frutas-secas escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/frutas-secas.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3  todos frutas-cristalizadas escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/frutas-cristalizadas.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3  todos graos escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/graos" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3  todos frutas-secas escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/frutas-secas.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 col-12 col-xl-3  todos frutas-cristalizadas escondido">
-						<a  class="d-block mb-4 h-100 pointer" onclick="modalProduto()">
-							<img class="img-fluid img-thumbnail" src="img/frutas-cristalizadas.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-3 mx-auto">
-						<a href="produtos.html" class="btn btn-outline-light" style="width: 100%">Veja todos o produtos</a>
-					</div>
+
+
 				</div>
 			</section>
 			<section id="vinhos">
@@ -296,22 +286,7 @@
 					<div class="col-3 mx-auto" > <a href="#" style="width: 100%" class="btn btn-outline-light">Veja todos os vinhos</a></div>
 				</div>
 			</section>
-			<!-- <section id="dicas">
-				<div class="row bg-white py-5">
-					<div class="col-12 mb-2">
-						<h3 class="text-clement-light color-sv-2">Principais Dicas</h3>
-						<span class="hr-sv1"></span>
-					</div>
-					<div class="col-md-3  border border-success">
-						<h4 class="text-montserrat color-sv-3">
-						Dica 1
-						</h4>
-						<p class=" text-montserrat color-sv-3">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada tellus sit amet tempor commodo. Donec egestas nunc a ante mattis vulputate. In hac habitasse platea dictumst.
-						</p>
-					</div>
-				</div>
-			</section> -->
+
 			<section id="contato">
 				<div class="row bg-white">
 					<div class="col-12 mt-4">
@@ -371,77 +346,14 @@
 				</div>
 			</section>
 		</div>
-		<div class="modal fade" id="modalProduto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Produto X</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body p-0">
-						<div class="table-responsive m-0 p-0">
-							<table class="table table-sm table-hover table-striped ">
-								<thead>
-									<tr>
-										<td class="text-center" style="width: 20%;">Categoria</td>
-										<td class="text-center" style="width: 65%;">Descrição</td>
-										<td class="text-center" style="width: 15%;">Preço</td>
-									</tr>
-								</thead>
-								<tbody id="DescricaoProduto">
-									<tr>
-										<td class="text-center align-middle">xxxxxxxxxx</td>
-										<td class="text-montserrat text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel sodales lacus, ac accumsan turpis. Donec eget mi in lorem gravida rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam vulputate metus eu est vehicula efficitur. Fusce in dolor nec nibh sodales blandit</td>
-										<td class="text-center align-middle">R$ 99,99</td>
-									</tr>
-								</tbody>
-							</table>
-							
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
+
 		<script src="lib/jquery-3.1.1/jquery-3.1.1.js"></script>
 		<script src="lib/js/popper.min.js"></script>
 		<script src="lib/js/bootstrap.js"></script>
-		<!-- <script src="lib/cliptwo/vendor/maskedinput/jquery.maskedinput.js"></script> -->
+		<script src="js/main.js"></script>
 		<script >
-			jQuery(document).ready(function() {
-				$(".geral").hide();
-				$("#vinhos-br").show();
-			});
-			
-			var $doc = $('html, body');
-			$('.scroll-down').click(function() {
-					$doc.animate({
-							scrollTop: $( $.attr(this, 'href') ).offset().top -100
-					}, 1000);
-					return false;
-			});
-			function filtroProduto(id){
-				$(".badge-sv").removeClass('bg-sv-3 active').addClass('badge-secondary');
-				$("#"+id).addClass('bg-sv-3 active')
-				if (id == 'todos') {
-					$('.todos').show();
-				}else{
-					$('.todos').hide();
-					$('.todos.'+id).show();
-				}
-			}
-			function filtroVinho(id){
-				$(".cat-vinho").removeClass('active');
-				$("#cat-vinho-"+id).addClass('active');
-				$(".geral").hide();
-				$("#vinhos-"+id).show()
-			}
-			function modalProduto(){
-				$("#modalProduto").modal('show')
+			function showDetails(more, id){
+				
 			}
 		</script>
 	</body>
