@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
     $(".geral").hide();
-    $("#vinhos-br").show();
+    $("#wines-br").show();
 });
 
 $(window).on("scroll load resize", function () {
@@ -27,11 +27,11 @@ $('.scroll-down').click(function() {
         return false;
 });
 
-function filtroVinho(id){
-    $(".cat-vinho").removeClass('active');
-    $("#cat-vinho-"+id).addClass('active');
+function wineFilter(id){
+    $(".cat-wine").removeClass('active');
+    $("#cat-wine-"+id).addClass('active');
     $(".geral").hide();
-    $("#vinhos-"+id).show()
+    $("#wines-"+id).show()
 }
 function modalProduto(){
     $("#modalProduto").modal('show')

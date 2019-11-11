@@ -281,15 +281,15 @@
 .pointer:hover{
 	cursor: pointer;
 }
-.cat-vinho{
+.cat-wine{
 	border-radius: 50%;
 	transition: .1s;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	filter: grayscale(100%);
-  	
+  	width: 50px;
   	opacity: .5;
 }
-.cat-vinho.active{
+.cat-wine.active{
 	border: 2px solid #cecece;
 	padding: 0;
 	box-shadow: 0 0 4px #cecece;
