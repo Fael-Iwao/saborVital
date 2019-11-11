@@ -109,7 +109,7 @@
 	background-color: #fff !important;
 }
 .bg-dark-transparent{
-	background-color: rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.7);
 }
 
 .bg-green-02{
@@ -261,9 +261,16 @@
 }
 
 
-.img-thumbnail{
-	background-color: #ccc;
+.img-thumbnail.img-store{
+	background-color: var(--color-primary-01);
 	border:none;
+	border-radius: 0 !important;
+	padding: 1px !important;
+}
+.img-thumbnail.img-store:hover{
+	/* padding: 3px !important; */
+	box-shadow: 0 0 3px var(--color-primary-01);
+	transform: scale(1.01);
 }
 
 .textarea-sv{
@@ -285,7 +292,7 @@
 .cat-vinho.active{
 	border: 2px solid #cecece;
 	padding: 0;
-	width: 22%;
+	box-shadow: 0 0 4px #cecece;
 	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   	filter: grayscale(0%);
   	opacity: 1;
@@ -298,13 +305,13 @@
 
 /*icones*/
 .social-media{
-	font-size: 4em;
+	font-size: 3em;
 	color: var(--color-primary-02);
 }
 .social-media:hover{
 	cursor: pointer;
 	color: #34d14b !important;
-	transition: .3s;
+	transition: .1s;
 }
 
 
@@ -315,6 +322,22 @@
 
 .button-pesquisa{
 	border-radius: 0 15px 15px 0;
+}
+
+.form-styled:focus{
+	box-shadow: 0 0 1px var(--color-primary-04) !important;
+	border: 1px solid var(--color-primary-04) !important;
+	
+}
+.form-styled{
+	border-radius: 2px !important;
+	border: 1px solid var(--color-primary-03) !important;
+	color: var(--color-primary-04) !important;
+
+}
+.form-styled::placeholder{
+	color: var(--color-primary-03) !important;
+
 }
 
 
@@ -364,4 +387,61 @@
 
 .list-style-01 > li{
 	font-size: 12px;
+}
+
+
+.zoom-out {
+	overflow: hidden;
+}
+
+.zoom-out img {
+	-moz-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom-out:hover img {
+	width: 100%;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.zoom-in {
+	overflow: hidden;
+	border: 1px solid rgba(255,255,255,.5) !important;
+}
+
+.zoom-in img {
+
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom-in:hover img {
+	width: 100%;
+	-moz-transform: scale(1.06);
+	-webkit-transform: scale(1.06);
+	transform: scale(1.06);
+}
+.zoom-in:hover {
+	border: 1px solid rgba(255,255,255,1) !important;
+}
+
+
+.img-thumbnail.img-product{
+	border: none !important;
+	padding: 0 !important;
+	opacity: .5;
+
+}
+.img-thumbnail.img-product:hover{
+	opacity: 1;
+
+}
+.clicable:hover{
+	cursor: pointer;
 }

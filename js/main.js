@@ -36,5 +36,3 @@ function filtroVinho(id){
 function modalProduto(){
     $("#modalProduto").modal('show')
 }
-
-
