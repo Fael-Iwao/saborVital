@@ -1,7 +1,7 @@
 var products = [
     {
         
-        'photos':['img/products/prod002.jpg','img/products/prod002.jpg'],
+        'photos':['img/products/prod002.jpg','img/products/prod002.jpg','img/products/prod003.jpg'],
         'name':'Grãos',
         'shortDescription': 'Grande variedade de grãos de alta qualidade.',
         'description':'Etiam ut metus et ipsum aliquet consectetur et ac augue. Nulla facilisi. Vivamus eget consectetur diam. Phasellus auctor dignissim turpis id fermentum. Ut pretium eget nisl laoreet scelerisque.',
@@ -53,6 +53,7 @@ jQuery(document).ready(function() {
 
         generateDetails(id[1]);
     }
+
 });
 
 $(window).on("scroll load resize", function () {
@@ -120,7 +121,7 @@ function detailsProducts(index){
 }
 
 function generateDetails(id){
-    if( id >( products.length - 1)){
+    if( id > ( products.length - 1)){
         $(".404").removeClass('d-none')
         $(".200").addClass('d-none')
     }else{
@@ -132,8 +133,14 @@ function generateDetails(id){
         var image = '';
         var details = '';
             for(var i = 0; i < prd.photos.length; i ++){
+                var active = '';
+                if(i == 0){
+                    active = 'active';
+                }else{
+                    active = '';
+                }
                 thumbs += '<div class="zoom-in  my-2">';
-                thumbs += '    <img src="' + prd.photos[i] + '" class="img-thumbnail img-product clicable" alt="">';
+                thumbs += '    <img src="' + prd.photos[i] + '" class="img-thumbnail img-product clicable '+active+'" alt="" id="thumb-'+i+'" onclick="alterImage(\''+prd.photos[i]+'\', '+this.id+')">';
                 thumbs += '</div>';
             }
         var bigImage = prd.photos[0].split('.');
@@ -155,4 +162,15 @@ function generateDetails(id){
 }
 
 
+function alterImage(srcImage, idObject){
+
+    var bigImage = srcImage.split('.');
+
+    var image = '<img src="' + bigImage[0] + '_max.'+bigImage[1]+'" class="img-fluid" alt="">';
+    
+    $(".big-image").html(image);
+    $(".img-product").removeClass('active')
+    $("#"+idObject).addClass('active')
+
+}
 

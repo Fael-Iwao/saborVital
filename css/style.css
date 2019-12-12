@@ -438,6 +438,15 @@
 	opacity: .5;
 
 }
+.img-thumbnail.img-product.active{
+	border: none !important;
+	padding: 0 !important;
+	-moz-transform: scale(1.06);
+	-webkit-transform: scale(1.06);
+	transform: scale(1.06);
+	opacity: 1;
+
+}
 .img-thumbnail.img-product:hover{
 	opacity: 1;
 
